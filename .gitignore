@@ -4,3 +4,8 @@
 *.pot
 *.pyc
 local_settings.py
+
+
+## Unnecessary files ##
+#######################
+README.html
