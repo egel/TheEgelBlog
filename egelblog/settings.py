@@ -83,7 +83,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = '^p!idp7j7xmc)s_0u%)+j7o((2(z7#50w*5*bwa)eep@c*&k03'
+SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -156,3 +156,10 @@ LOGGING = {
         },
     }
 }
+
+### settings.py file
+### settings that are not environment dependent
+try:
+    from local_settings import *
+except ImportError:
+    pass
