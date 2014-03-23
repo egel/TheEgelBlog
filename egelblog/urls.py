@@ -6,7 +6,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'egelblog.views.home', name='home'),
-    # url(r'^egelblog/', include('egelblog.foo.urls')),
+    url(r'^blog/', include('blog.urls')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
