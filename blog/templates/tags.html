@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}{{ tag.title }}{% endblock %}
+
+
+{% block content %}
+
+  <h2>Tags</h2>
+  {% if tags %}
+    <ul>
+    {% for tag in tags %}
+        <li><a href="{{ tag.get_absolute_url }}">{{ tag.name }}</a></li>
+    {% endfor %}
+    </ul>
+  {% else %}
+    <p>There are no tags set yet :P</p>
+  {% endif %}
+
+{% endblock %}
