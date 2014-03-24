@@ -1,20 +1,15 @@
-from django.conf.urls import patterns, include, url
-from django.views.generic import ListView, DetailView
-from blog.models import Post
+from django.conf.urls import patterns, url
+from blog.models import Post, Category
 
-urlpatterns = patterns('blog.views',
-  url(r'^$', ListView.as_view(
-    queryset = Post.objects.all().order_by("-created")[:2],
-    template_name="blog.html")),
+urlpatterns = patterns('',
 
-  url(r'^(?P<pk>\d+)$', DetailView.as_view(
-    model=Post,
-    template_name="post.html")),
+  url(r'^$', 'blog.views.index'),
 
-  url(r'^archives/$', ListView.as_view(
-    queryset = Post.objects.all().order_by("-created"),
-    template_name="archives.html")),
+  url(r'^posts/(?P<slug>[^\.]+).html', 'blog.views.view_post', name='view_blog_post'),
 
-  url(r'^tag/(?P<tag>\w+)$', 'tagpage'),
+  url(r'^categories/(?P<slug>[^\.]+).html', 'blog.views.view_category', name='view_blog_category'),
 
+  url(r'^categories/$', 'blog.views.view_categories', name='view_blog_categories'),
+
+  url(r'^archives/$', 'blog.views.view_archives', name='view_blog_archives'),
 )
