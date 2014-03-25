@@ -11,5 +11,9 @@ urlpatterns = patterns('',
 
   url(r'^categories/$', 'blog.views.view_categories', name='view_blog_categories'),
 
+  url(r'^tags/(?P<slug>[^\.]+).html', 'blog.views.view_tag', name='view_blog_tag'),
+
+  url(r'^tags/$', 'blog.views.view_tags', name='view_blog_tags'),
+
   url(r'^archives/$', 'blog.views.view_archives', name='view_blog_archives'),
 )
