@@ -1,5 +1,5 @@
-# Egel's Blog
-> Simple but heroic barebones blog created in Django framework :)
+# The Egel's Blog
+> Simple, but heroic personal blog created in Django framework.
 
 
 ## Instalation
