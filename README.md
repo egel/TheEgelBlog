@@ -30,4 +30,4 @@ All software for project is in the requirements.txt file
 
 
 ## License
-Software license [GNU AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html) - Maciej Sypień
+Software under [GNU AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html) license.
