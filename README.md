@@ -10,11 +10,12 @@ All software for project is in the requirements.txt file
 
 
 ## Features:
-  - bare bones styling - non CSS for now
-  - multi-categories for single post
-  - multi-tags for single post
-  - creating automatic slug in: post, category, tag
-  - auto update the date of posts
+  - Barebones styling - non CSS for now
+  - Multi-categories for single post
+  - Multi-tags for single post
+  - Creating automatic slug in: post, category, tag
+  - Auto-update the date of posts
+  - [TinyMCE][1] editor
 
 ### Pages:
   - Single Post
@@ -27,7 +28,12 @@ All software for project is in the requirements.txt file
 
 ### TODO List
   - Add bootstrap 3 as main front-end framework
+  - Python markdown syntax
 
 
 ## License
 Software under [GNU AGPLv3](http://www.gnu.org/licenses/agpl-3.0.html) license.
+
+
+
+  [1]: https://github.com/aljosa/django-tinymce
