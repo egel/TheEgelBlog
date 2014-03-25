@@ -11,11 +11,11 @@ All software for project is in the requirements.txt file
 
 ## Features:
   - Barebones styling - non CSS for now
-  - Multi-categories for single post
-  - Multi-tags for single post
+  - Multi-categories and multi-tags for single post
   - Creating automatic slug in: post, category, tag
   - Auto-update the date of posts
   - [TinyMCE][1] editor
+  - Based on Django 1.5.5
 
 ### Pages:
   - Single Post
