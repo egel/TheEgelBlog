@@ -6,6 +6,12 @@
 local_settings.py
 
 
+## Pycharm ##
+#############
+*.idea/
+
+
 ## Unnecessary files ##
 #######################
 README.html
+*.sublime-workspace
