@@ -1,6 +1,9 @@
 {
 	"folders":
 	[
+        {
+            "path": "../static",
+        },
 		{
 			"follow_symlinks": true,
 			"path": ".",
