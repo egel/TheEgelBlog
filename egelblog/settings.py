@@ -1,5 +1,10 @@
 # Django settings for egelblog project.
 
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+# BASE_DIR = ~/django_projects/virtualenvs/myenv27/TheEgelBlog/
+
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -108,6 +113,7 @@ ROOT_URLCONF = 'egelblog.urls'
 WSGI_APPLICATION = 'egelblog.wsgi.application'
 
 TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(BASE_DIR), "static", "templates")
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
