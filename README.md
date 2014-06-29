@@ -1,6 +1,7 @@
 # The Egel's Blog
 > Simple, but heroic personal blog created in Django framework.
 
+
 ## Features:
   - Barebones styling - non CSS for now
   - Multi-categories and multi-tags for single post
