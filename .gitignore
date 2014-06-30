@@ -5,6 +5,17 @@
 *.pyc
 local_settings.py
 
+# copied static files
+static/static-only/
+
+
+## Virtualenv files ##
+######################
+bin/
+include/
+local/
+lib/
+
 
 ## Pycharm ##
 #############
