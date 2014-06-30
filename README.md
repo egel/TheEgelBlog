@@ -8,7 +8,7 @@
   - Creating automatic slug in: post, category, tag
   - Auto-update the date of posts
   - [TinyMCE][1] editor
-  - Based on Django 1.5.5
+  - Based on Django 1.6.5
 
 ### Pages:
   - Single Post
