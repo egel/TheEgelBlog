@@ -10,6 +10,7 @@
                 "include",
                 "lib",
                 "local",
+                "*.idea",
             ],
             "file_exclude_patterns":
             [
