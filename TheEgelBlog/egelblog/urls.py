@@ -9,6 +9,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'signups.views.home', name='home'),
+    url(r'^thank-you/$', 'signups.views.thankyou', name='thankyou'),
+    url(r'^about-us/$', 'signups.views.aboutus', name='aboutus'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blog/', include('blog.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
